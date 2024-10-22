@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#hangmanCanvas {
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+#wordDisplay {
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+#keyboard button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}

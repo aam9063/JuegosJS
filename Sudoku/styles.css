@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid #333;
+    outline: none;
+}
+
+input:nth-child(3n+0) {
+    border-right: 2px solid #000;
+}
+
+input:nth-child(n+19):nth-child(-n+21),
+input:nth-child(n+28):nth-child(-n+30),
+input:nth-child(n+37):nth-child(-n+39),
+input:nth-child(n+46):nth-child(-n+48),
+input:nth-child(n+55):nth-child(-n+57),
+input:nth-child(n+64):nth-child(-n+66) {
+    border-bottom: 2px solid #000;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#statusText {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
